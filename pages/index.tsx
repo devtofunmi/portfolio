@@ -23,6 +23,24 @@ export default function Home() {
       website: "https://devsparq.netlify.app",
       github: "https://github.com/devtofunmi/devsparq",
     },
+    {
+      name: "MadewithChakra",
+      description: "Showcase website made with Chakra UI.",
+      website: "https://madewithchakra.netlify.app",
+      github: "https://github.com/devtofunmi/madewithchakra",
+    },
+    {
+      name: "Nounite",
+      description: "Making Open and Distance Learning Easier.",
+      website: "https://nounite.netlify.app",
+      github: "https://github.com/devtofunmi/devtofunmi",
+    },
+    {
+      name: "Coin",
+      description: "Your Gateway to Real Time Coin Data",
+      website: "https://coiinsearch.netlify.app",
+      github: "https://github.com/devtofunmi/devtofunmi",
+    },
   ];
 
   const technologies = [
