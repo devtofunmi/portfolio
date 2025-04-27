@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-[#0d0d0d] text-gray-200 px-6 py-12 font-sans relative">
-      {/* Fixed Navbar */}
+      {/*Navbar */}
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/10 backdrop-blur-md rounded-full p-3 flex gap-8 border border-white/20 shadow-lg">
         <a href="https://twitter.com/codebreak_er" target="_blank" className="hover:text-blue-400">
           <BsTwitterX size={20} />
