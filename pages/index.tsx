@@ -1,115 +1,187 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+"use client";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import Link from "next/link";
+import { Github, Globe, Twitter, Instagram, Download,  Server, Database } from "lucide-react";
+import { SiNextdotjs, SiTailwindcss, SiTypescript, SiSupabase, SiPrisma, SiMongodb } from "react-icons/si";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import { FaReact } from "react-icons/fa";
+import { BsTwitterX } from "react-icons/bs";
 
 export default function Home() {
+  const projects = [
+    {
+      name: "PrettyBio",
+      description: "A customizable link-in-bio platform to manage your online presence.",
+      website: "https://prettybio.netlify.app",
+      github: "https://github.com/devtofunmi/prettybio",
+    },
+    {
+      name: "DevSparq",
+      description: "A platform helping indie developers discover inspiration and build better projects.",
+      website: "https://devsparq.netlify.app",
+      github: "https://github.com/devtofunmi/devsparq",
+    },
+  ];
+
+  const technologies = [
+    {  icon: <SiNextdotjs size={20} /> },
+    {  icon: <FaReact size={20} /> },
+    {  icon: <SiTailwindcss size={20} /> },
+    {  icon: <SiTypescript size={20} /> },
+    {  icon: <SiSupabase size={20} /> },
+    {  icon: <Server size={20} /> },
+    {  icon: <SiPrisma size={20} /> },
+    {  icon: <SiMongodb size={20} /> },
+  ];
+
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.className} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-    >
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              pages/index.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="min-h-screen bg-[#0d0d0d] text-gray-200 px-6 py-12 font-sans relative">
+      {/* Fixed Navbar */}
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/10 backdrop-blur-md rounded-full p-3 flex gap-8 border border-white/20 shadow-lg">
+        <a href="https://twitter.com/codebreak_er" target="_blank" className="hover:text-blue-400">
+          <BsTwitterX size={20} />
+        </a>
+        <a href="https://instagram.com/iamnattyjay" target="_blank" className="hover:text-pink-400">
+          <Instagram size={20} />
+        </a>
+        <a href="/Olayiwola_jesutofunmi_CV.pdf" download className="hover:text-green-400">
+          <Download size={20} />
+        </a>
+        <a href="https://github.com/devtofunmi" target="_blank" className="hover:text-gray-400">
+          <Github size={20} />
+        </a>
+      </nav>
+
+      <section className="max-w-3xl mx-auto space-y-10">
+        {/* Hero */}
+        <header className="space-y-2 mt-10">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-red-400 bg-clip-text text-transparent">
+            Jesutofunmi
+          </h1>
+          <p className="text-gray-400">Frontend Developer</p>
+        </header>
+
+        {/* About Me */}
+        <section id="about" className="space-y-6">
+          <p className="leading-relaxed text-gray-300">
+            I'm a frontend developer passionate about building clean, responsive, and user friendly websites.
+          </p>
+          <p className="text-lg leading-relaxed text-gray-300">
+            I'm always learning new technologies and improving my skills to deliver the best results for any project I work on.
+          </p>
+        </section>
+
+        {/* Services */}
+        <section id="services" className="space-y-6">
+          <h2 className="text-xl font-bold underline">Services</h2>
+          <ul className="space-y-4">
+            {[
+              {
+                title: "Frontend Development",
+                description: "Building responsive, modern websites with React, Next.js, Tailwind CSS, and TypeScript.",
+              },
+              {
+                title: "UI Implementation",
+                description: "Transforming Figma designs or ideas into pixel perfect user interfaces.",
+              },
+              {
+                title: "Fullstack Collaboration",
+                description: "Working with backend teams to create seamless fullstack applications.",
+              },
+            ].map((service, index) => (
+              <li
+                key={index}
+                className="border border-gray-800 p-4 rounded-md hover:bg-gray-900 transition"
+              >
+                <h3 className="text-xl font-bold mb-1">{service.title}</h3>
+                <p className="text-gray-400 text-sm">{service.description}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Technologies */}
+        <section id="technologies" className="space-y-6 mt-15">
+          <Swiper
+            spaceBetween={20}
+            slidesPerView={5}
+            loop
+            autoplay={{
+              delay: 1500,
+              disableOnInteraction: false,
+            }}
+            modules={[Autoplay]}
+            className="py-4"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+            {technologies.map((tech, index) => (
+              <SwiperSlide key={index}>
+                <div className="flex flex-col items-center justify-center text-sm font-semibold hover:bg-gray-900 transition">
+                  {tech.icon}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </section>
+
+        {/* Projects */}
+        <section id="projects" className="space-y-8 mt-12">
+          <h2 className="text-xl font-semibold underline">Projects</h2>
+          <div className="space-y-6">
+            {projects.map((project, index) => (
+              <div key={index} className="group">
+                <h3 className="text-lg font-bold group-hover:text-white transition">
+                  {project.name}
+                </h3>
+                <p className="text-gray-400 mt-1">{project.description}</p>
+                <div className="flex gap-4 mt-3">
+                  <Link
+                    href={project.website}
+                    target="_blank"
+                    className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 transition px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    <Globe size={16} />
+                    Website
+                  </Link>
+                  <Link
+                    href={project.github}
+                    target="_blank"
+                    className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 transition px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    <Github size={16} />
+                    GitHub
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Contact */}
+        <section id="contact" className="space-y-6 mt-12">
+          <h2 className="text-xl font-bold underline">Contact</h2>
+          <p className="leading-relaxed text-gray-300">
+            Have a project in mind or want to work together?<br />
+            Feel free to reach out!
+          </p>
+          <div className="space-y-2">
+            <p className="text-gray-400">Email:</p>
+            <a
+              href="mailto:olayiwolajesutofunmi@gmail.com"
+              className="text-purple-400 hover:underline"
+            >
+              olayiwolajesutofunmi@gmail.com
+            </a>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+          &copy; {new Date().getFullYear()} Jesutofunmi
+        </footer>
+      </section>
+    </main>
   );
 }
+
