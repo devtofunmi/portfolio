@@ -86,7 +86,7 @@ export default function Home() {
           <p className="leading-relaxed text-gray-300">
             I'm a frontend developer passionate about building clean, responsive, and user friendly websites.
           </p>
-          <p className="text-lg leading-relaxed text-gray-300">
+          <p className="leading-relaxed text-gray-300">
             I'm always learning new technologies and improving my skills to deliver the best results for any project I work on.
           </p>
         </section>
