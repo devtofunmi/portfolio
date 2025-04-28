@@ -92,7 +92,7 @@ export default function Home() {
         </section>
 
         {/* Services */}
-        <section id="services" className="space-y-6">
+        {/* <section id="services" className="space-y-6">
           <h2 className="text-xl font-bold underline">Services</h2>
           <ul className="space-y-4">
             {[
@@ -118,7 +118,7 @@ export default function Home() {
               </li>
             ))}
           </ul>
-        </section>
+        </section> */}
 
         {/* Technologies */}
         <section id="technologies" className="space-y-6 mt-15">
