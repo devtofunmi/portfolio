@@ -18,10 +18,16 @@ export default function Home() {
       github: "https://github.com/devtofunmi/prettybio",
     },
     {
-      name: "DevSparq",
+      name: "LaunchHunt",
       description: "A platform helping indie developers discover inspiration and build better projects.",
-      website: "https://devsparq.netlify.app",
-      github: "https://github.com/devtofunmi/devsparq",
+      website: "https://launchhunt.netlify.app",
+      github: "https://github.com/devtofunmi/hunt",
+    },
+    {
+      name: "FlashPrompt",
+      description: "Generate powerful AI prompts for coding, content, and startup ideas — instantly",
+      website: "https://flashprompt.netlify.app",
+      github: "https://github.com/devtofunmi/flashprompt",
     },
     {
       name: "MadewithChakra",
