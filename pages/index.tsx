@@ -30,6 +30,12 @@ export default function Home() {
       github: "https://github.com/devtofunmi/flashprompt",
     },
     {
+      name: "Lockit",
+      description: "Lockit securely locks and shares private messages with trusted recipients only.",
+      website: "https://lockitt.netlify.app",
+      github: "https://github.com/devtofunmi/lockit",
+    },
+    {
       name: "MadewithChakra",
       description: "Showcase website made with Chakra UI.",
       website: "https://madewithchakra.netlify.app",
