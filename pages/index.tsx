@@ -133,7 +133,7 @@ export default function Home() {
         </section> */}
 
         {/* Technologies */}
-        <section id="technologies" className="space-y-6 mt-15">
+        <section id="technologies" className="space-y-5 mt-15">
           <Swiper
             spaceBetween={20}
             slidesPerView={5}
@@ -143,11 +143,11 @@ export default function Home() {
               disableOnInteraction: false,
             }}
             modules={[Autoplay]}
-            className="py-4"
+            className="py-2"
           >
             {technologies.map((tech, index) => (
               <SwiperSlide key={index}>
-                <div className="flex flex-col items-center justify-center text-sm font-semibold hover:bg-gray-900 transition">
+                <div className="flex flex-col p-2 items-center justify-center text-sm font-semibold hover:bg-gray-900 transition">
                   {tech.icon}
                 </div>
               </SwiperSlide>
