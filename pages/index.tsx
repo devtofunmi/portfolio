@@ -8,6 +8,7 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import { FaReact } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
+import Head from "next/head";
 
 export default function Home() {
   const projects = [
@@ -67,6 +68,30 @@ export default function Home() {
   ];
 
   return (
+    <>
+    <Head>
+  <title>Jesutofunmi | Frontend Developer Portfolio</title>
+  <meta name="description" content="Jesutofunmi is a frontend developer passionate about building responsive, user-friendly websites using React, Next.js, and Tailwind CSS." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0d0d0d" />
+
+  {/* Open Graph Meta Tags */}
+  <meta property="og:title" content="Jesutofunmi | Frontend Developer Portfolio" />
+  <meta property="og:description" content="Explore Jesutofunmi's projects and frontend skills including PrettyBio, LaunchHunt, and more." />
+  <meta property="og:url" content="https://www.tofunmi.xyz" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/portfolio.png" />
+
+  {/* Twitter Card */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:creator" content="@codebreak_er" />
+  <meta name="twitter:title" content="Jesutofunmi | Frontend Developer Portfolio" />
+  <meta name="twitter:description" content="Frontend developer building clean and modern websites with React, Next.js, and Tailwind CSS." />
+  <meta name="twitter:image" content="/portfolio.png" />
+
+  <link rel="icon" href="/favicon.ico" />
+</Head>
+   
     <main className="min-h-screen bg-[#0d0d0d] text-gray-200 px-6 py-12 font-sans relative">
       {/*Navbar */}
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-white/10 backdrop-blur-md rounded-full p-3 flex gap-8 border border-white/20 shadow-lg">
@@ -212,6 +237,6 @@ export default function Home() {
         </footer>
       </section>
     </main>
+    </>
   );
 }
-
