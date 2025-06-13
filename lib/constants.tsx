@@ -1,4 +1,3 @@
-// lib/constants.ts
 import { FaReact } from "react-icons/fa";
 import { Server } from "lucide-react";
 import {
