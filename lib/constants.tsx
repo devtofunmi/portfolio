@@ -59,8 +59,7 @@ export const projects = [
     description: "Generate powerful AI prompts for coding, content, and startup ideas instantly",
     website: "https://flashprompt.netlify.app",
     github: "https://github.com/devtofunmi/flashprompt",
-    status: "offline",
-    reason: "Backend free tier exceeded",
+    status: "online",
   },
    {
     name: "EsseencebyTiti",
