@@ -67,7 +67,6 @@ export const projects = [
     website: "https://essencebytiti.netlify.app/",
     github: "https://github.com/devtofunmi/essence_by_titi",
     status: "progress",
-    reason: "Currently in development",
   },
   {
     name: "Lockit",
@@ -77,7 +76,13 @@ export const projects = [
     status: "offline",
     reason: "Backend free tier exceeded",
   },
-  
+  {
+    name: "Admin",
+    description: "Project management made for devs, by dev.",
+    website: "https://admindasshboard.netlify.app/",
+    github: "https://github.com/devtofunmi/dashboard",
+    status: "progress",
+  },
   {
     name: "MadewithChakra",
     description: "Showcase website made with Chakra UI.",
