@@ -34,8 +34,8 @@ export const projects = [
     description: "A platform helping indie developers discover inspiration and build better projects.",
     website: "https://launchhunt.netlify.app",
     github: "https://github.com/devtofunmi/hunt",
-    status: "offline",
-    reason: "Backend free tier exceeded",
+    status: "online",
+    // reason: "Backend free tier exceeded",
   },
   {
     name: "PrettyBio",
