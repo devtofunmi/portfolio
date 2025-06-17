@@ -77,6 +77,15 @@ export const projects = [
     reason: "Backend free tier exceeded",
   },
   {
+
+    name: "Dohris",
+    description: "A vibrant birthday website I made for a friend to make her day extra special 💖🎉",
+    website: "https://dohris.netlify.app/",
+    github: "https://github.com/devtofunmi/dohris",
+    status: "online",
+  },
+
+  {
     name: "Admin",
     description: "Project management made for devs, by dev.",
     website: "https://admindasshboard.netlify.app/",
