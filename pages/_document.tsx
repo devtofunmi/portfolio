@@ -12,7 +12,7 @@ export default function Document() {
         <meta name="robots" content="index, follow" />
 
         {/* Favicon */}
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/jaydp.png" />
 
         {/* Open Graph for social sharing */}
         <meta property="og:title" content="Tofunmi | Frontend Developer Portfolio" />
