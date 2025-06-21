@@ -21,7 +21,7 @@ export default function NavBar() {
         <Instagram size={20} />
       </a>
       <a
-        href="/Olayiwola_jesutofunmi_CV.pdf"
+        href="/Jesutofunmi Olayiwola.pdf"
         download
         className="hover:text-green-400"
       >
