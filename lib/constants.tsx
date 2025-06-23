@@ -50,8 +50,8 @@ export const projects = [
     description: "Submit your portfolio and get ranked by the community.",
     website: "https://foliorank.netlify.app",
     github: "https://github.com/devtofunmi/foliorank",
-    status: "progress",
-    reason: "Currently in development",
+    status: "online",
+   // reason: "Currently in development",
   },
 
   {
