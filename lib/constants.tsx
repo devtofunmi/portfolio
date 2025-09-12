@@ -77,13 +77,27 @@ export const projects = [
     reason: "Backend free tier exceeded",
   },
   {
-
-    name: "Dohris",
-    description: "A vibrant birthday website I made for a friend to make her day extra special 💖🎉",
-    website: "https://dohris.netlify.app/",
-    github: "https://github.com/devtofunmi/dohris",
-    status: "online",
+    name: "Carevo",
+    description: "Carevo works nonstop finding and applying to the right jobs for you until you’re hired.",
+    website: "https://carevoo.vercel.app/",
+    github: "https://github.com/devtofunmi/carevo",
+    status: "progress",
   },
+   {
+    name: "Audio4Lab",
+    description: " Generate Royalty-Free Music for Your Videos ",
+    website: "https://audio4lab.vercel.app/",
+    github: "https://github.com/devtofunmi/audio4lab",
+    status: "progress",
+  },
+  // {
+
+  //   name: "Dohris",
+  //   description: "A vibrant birthday website I made for a friend to make her day extra special 💖🎉",
+  //   website: "https://dohris.netlify.app/",
+  //   github: "https://github.com/devtofunmi/dohris",
+  //   status: "online",
+  // },
 
   {
     name: "Admin",
