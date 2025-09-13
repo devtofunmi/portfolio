@@ -107,13 +107,13 @@ export const projects = [
   //   status: "online",
   // },
 
-  {
-    name: "Admin",
-    description: "Project management made for devs, by dev.",
-    website: "https://admindasshboard.netlify.app/",
-    github: "https://github.com/devtofunmi/dashboard",
-    status: "progress",
-  },
+  // {
+  //   name: "Admin",
+  //   description: "Project management made for devs, by dev.",
+  //   website: "https://admindasshboard.netlify.app/",
+  //   github: "https://github.com/devtofunmi/dashboard",
+  //   status: "progress",
+  // },
   {
     name: "MadewithChakra",
     description: "Showcase website made with Chakra UI.",
@@ -121,18 +121,18 @@ export const projects = [
     github: "https://github.com/devtofunmi/madewithchakra",
     status: "online",
   },
-  {
-    name: "Nounite",
-    description: "Making Open and Distance Learning Easier.",
-    website: "https://nounite.netlify.app",
-    github: "https://github.com/devtofunmi/devtofunmi",
-    status: "online",
-  },
-  {
-    name: "Coin",
-    description: "Your Gateway to Real Time Coin Data",
-    website: "https://coiinsearch.netlify.app",
-    github: "https://github.com/devtofunmi/devtofunmi",
-    status: "online",
-  },
+  // {
+  //   name: "Nounite",
+  //   description: "Making Open and Distance Learning Easier.",
+  //   website: "https://nounite.netlify.app",
+  //   github: "https://github.com/devtofunmi/devtofunmi",
+  //   status: "online",
+  // },
+  // {
+  //   name: "Coin",
+  //   description: "Your Gateway to Real Time Coin Data",
+  //   website: "https://coiinsearch.netlify.app",
+  //   github: "https://github.com/devtofunmi/devtofunmi",
+  //   status: "online",
+  // },
 ] as const;
