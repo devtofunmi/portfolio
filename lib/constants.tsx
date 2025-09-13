@@ -29,6 +29,14 @@ export const technologies = [
 ];
 
 export const projects = [
+    {
+    name: "Chat Flow",
+    description: "A Natural Language Interface for Building Flowcharts",
+    website: "https://chatt-flow.vercel.app/",
+    github: "https://github.com/devtofunmi/chat-flow",
+    status: "online",
+    // reason: "Backend free tier exceeded",
+  },
   {
     name: "LaunchHunt",
     description: "A platform helping indie developers discover inspiration and build better projects.",
