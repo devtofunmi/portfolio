@@ -66,7 +66,8 @@ export const projects = [
     description: "Engage with our AI-driven interview coach in a real-time, personalized practice environment. Receive actionable feedback to enhance your professional delivery.",
     website: "https://inter-v.vercel.app/",
     github: "https://github.com/devtofunmi/inter-v",
-    status: "online",
+    status: "progress",
+    reason: "Currently in development",
   },
    {
     name: "EsseencebyTiti",
