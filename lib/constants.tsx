@@ -29,6 +29,14 @@ export const technologies = [
 ];
 
 export const projects = [
+    {
+    name: "Chat Flow",
+    description: "A Natural Language Interface for Building Flowcharts",
+    website: "https://chatt-flow.vercel.app/",
+    github: "https://github.com/devtofunmi/chat-flow",
+    status: "online",
+    // reason: "Backend free tier exceeded",
+  },
   {
     name: "LaunchHunt",
     description: "A platform helping indie developers discover inspiration and build better projects.",
@@ -50,8 +58,8 @@ export const projects = [
     description: "Submit your portfolio and get ranked by the community.",
     website: "https://foliorank.netlify.app",
     github: "https://github.com/devtofunmi/foliorank",
-    status: "progress",
-    reason: "Currently in development",
+    status: "online",
+   // reason: "Currently in development",
   },
 
   {
@@ -85,21 +93,35 @@ export const projects = [
     reason: "Backend free tier exceeded",
   },
   {
-
-    name: "Dohris",
-    description: "A vibrant birthday website I made for a friend to make her day extra special 💖🎉",
-    website: "https://dohris.netlify.app/",
-    github: "https://github.com/devtofunmi/dohris",
-    status: "online",
-  },
-
-  {
-    name: "Admin",
-    description: "Project management made for devs, by dev.",
-    website: "https://admindasshboard.netlify.app/",
-    github: "https://github.com/devtofunmi/dashboard",
+    name: "Carevo",
+    description: "Carevo works nonstop finding and applying to the right jobs for you until you’re hired.",
+    website: "https://carevoo.vercel.app/",
+    github: "https://github.com/devtofunmi/carevo",
     status: "progress",
   },
+   {
+    name: "Audio4Lab",
+    description: " Generate Royalty-Free Music for Your Videos ",
+    website: "https://audio4lab.vercel.app/",
+    github: "https://github.com/devtofunmi/audio4lab",
+    status: "progress",
+  },
+  // {
+
+  //   name: "Dohris",
+  //   description: "A vibrant birthday website I made for a friend to make her day extra special 💖🎉",
+  //   website: "https://dohris.netlify.app/",
+  //   github: "https://github.com/devtofunmi/dohris",
+  //   status: "online",
+  // },
+
+  // {
+  //   name: "Admin",
+  //   description: "Project management made for devs, by dev.",
+  //   website: "https://admindasshboard.netlify.app/",
+  //   github: "https://github.com/devtofunmi/dashboard",
+  //   status: "progress",
+  // },
   {
     name: "MadewithChakra",
     description: "Showcase website made with Chakra UI.",
@@ -107,18 +129,18 @@ export const projects = [
     github: "https://github.com/devtofunmi/madewithchakra",
     status: "online",
   },
-  {
-    name: "Nounite",
-    description: "Making Open and Distance Learning Easier.",
-    website: "https://nounite.netlify.app",
-    github: "https://github.com/devtofunmi/devtofunmi",
-    status: "online",
-  },
-  {
-    name: "Coin",
-    description: "Your Gateway to Real Time Coin Data",
-    website: "https://coiinsearch.netlify.app",
-    github: "https://github.com/devtofunmi/devtofunmi",
-    status: "online",
-  },
+  // {
+  //   name: "Nounite",
+  //   description: "Making Open and Distance Learning Easier.",
+  //   website: "https://nounite.netlify.app",
+  //   github: "https://github.com/devtofunmi/devtofunmi",
+  //   status: "online",
+  // },
+  // {
+  //   name: "Coin",
+  //   description: "Your Gateway to Real Time Coin Data",
+  //   website: "https://coiinsearch.netlify.app",
+  //   github: "https://github.com/devtofunmi/devtofunmi",
+  //   status: "online",
+  // },
 ] as const;

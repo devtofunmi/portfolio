@@ -15,15 +15,16 @@ export default function Document() {
         <link rel="icon" href="/jaydp.png" />
 
         {/* Open Graph for social sharing */}
-        <meta property="og:title" content="Tofunmi | Frontend Developer Portfolio" />
-        <meta property="og:description" content="Building modern, fast web apps using React, Next and Tailwind CSS." />
+        <meta property="og:title" content="Tofunmi | Frontend Developer" />
+        <meta property="og:description" content="Building modern, fast web apps using React, Next, Typescript and Tailwind CSS." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://tofunmi.xyz" />
         <meta property="og:image" content="https://devtofunmi.tofunmi.xyz/og-image.png" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Funmi | Frontend Developer" />
+        <meta name="twitter:title" content="Tofunmi | Frontend Developer" />
+        <meta name="twitter:site" content="@Tofunmi | Frontend Developer" />
         <meta name="twitter:description" content="Check out my portfolio showcasing React and Tailwind projects." />
         <meta name="twitter:image" content="https://devtofunmi.tofunmi.xyz/og-image.png" />
       </Head>
