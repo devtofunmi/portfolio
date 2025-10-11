@@ -29,6 +29,14 @@ export const technologies = [
 ];
 
 export const projects = [
+  {
+    name: "Inter-v",
+    description: "Engage with our AI-driven interview coach in a real-time, personalized practice environment. Receive actionable feedback to enhance your professional delivery.",
+    website: "https://inter-v.vercel.app/",
+    github: "https://github.com/devtofunmi/inter-v",
+    status: "online",
+    // reason: "Currently in development",
+  },
     {
     name: "Chat Flow",
     description: "A Natural Language Interface for Building Flowcharts",
@@ -69,14 +77,7 @@ export const projects = [
     github: "https://github.com/devtofunmi/flashprompt",
     status: "online",
   },
-  {
-    name: "Inter-v",
-    description: "Engage with our AI-driven interview coach in a real-time, personalized practice environment. Receive actionable feedback to enhance your professional delivery.",
-    website: "https://inter-v.vercel.app/",
-    github: "https://github.com/devtofunmi/inter-v",
-    status: "progress",
-    reason: "Currently in development",
-  },
+  
    {
     name: "EsseencebyTiti",
     description: "Discover luxury fragrances that define your essence. Premium scents, timeless elegance.",
