@@ -25,6 +25,8 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard({ project, index }: ProjectCardProps) {
+  const geistSans = { className: "font-sans" };
+  const geistMono = { className: "font-mono" }; 
   return (
     <motion.div
       key={project.name}
@@ -32,10 +34,10 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -10 }}
       transition={{ duration: 0.3, delay: index * 0.05 }}
-      className="group"
+      className={`${geistSans.className} ${geistMono.className} font-sans group border-1 border-[#1e1e1e] p-5 rounded-xl`}
     >
-      <div className="flex items-center justify-between">
-        <h3 className="text-lg font-bold group-hover:text-white transition">
+      <div className="flex items-center justify-between ">
+        <h3 className="text-md font-bold group-hover:text-white transition">
           {project.name}
         </h3>
         <span
@@ -48,12 +50,12 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             : "Online"}
         </span>
       </div>
-      <p className="text-gray-400 mt-1">{project.description}</p>
+      <p className="text-gray-400 mt-1 text-sm">{project.description}</p>
       <div className="flex gap-4 mt-3">
         <Link
           href={project.website}
           target="_blank"
-          className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 transition px-3 py-2 rounded-md text-sm font-medium"
+          className="flex items-center gap-2 bg-[#1e1e1e] hover:bg-white/10 text-white/70  transition px-3 py-2 rounded-full text-sm font-medium"
         >
           <Globe size={16} />
           Website
@@ -61,7 +63,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <Link
           href={project.github}
           target="_blank"
-          className="flex items-center gap-2 bg-gray-700 hover:bg-gray-800 transition px-3 py-2 rounded-md text-sm font-medium"
+          className="flex items-center gap-2 bg-[#1e1e1e] hover:bg-white/10 text-white/70  transition px-3 py-2 rounded-full text-sm font-medium"
         >
           <Github size={16} />
           GitHub

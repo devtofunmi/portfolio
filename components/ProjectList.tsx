@@ -17,8 +17,10 @@ type ProjectListProps = {
 };
 
 export default function ProjectList({ projects }: ProjectListProps) {
+  const geistSans = { className: "font-sans" };
+  const geistMono = { className: "font-mono" }; 
   return (
-    <div className="space-y-6">
+    <div className={`${geistSans.className} ${geistMono.className} font-sans space-y-6`}>
       <AnimatePresence mode="wait">
         {projects.map((project, index) => (
           <ProjectCard key={project.name} project={project} index={index} />

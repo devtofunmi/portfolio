@@ -10,8 +10,10 @@ type TabsProps = {
 }
 
 export default function Tabs({ tabs, activeTab, setActiveTab }: TabsProps) {
+  const geistSans = { className: "font-sans" };
+  const geistMono = { className: "font-mono" }; 
   return (
-    <div className="relative flex  gap-4 border border-white/10 p-1 rounded-full bg-white/5 w-fit">
+    <div className={`${geistSans.className} ${geistMono.className} font-sans relative flex  gap-4 border border-white/10 p-1 rounded-full bg-white/5 w-fit`}>
       {tabs.map((tab) => (
         <button
           key={tab}

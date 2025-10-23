@@ -3,9 +3,11 @@
 import { Mail, Send } from "lucide-react";
 
 export default function Contact() {
+  const geistSans = { className: "font-sans" };
+  const geistMono = { className: "font-mono" }; 
   return (
-    <section id="contact" className="space-y-4 mt-20">
-      <h2 className="text-xl font-semibold underline flex items-center gap-2">
+    <section id="contact" className={`${geistSans.className} ${geistMono.className} font-sans space-y-4 mt-20`}>
+      <h2 className="text-md flex items-center gap-2">
         Contact Me
       </h2>
 

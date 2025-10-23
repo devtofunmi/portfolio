@@ -7,7 +7,6 @@ import { tabs, statusStyles, projects, technologies } from "@/lib/constants";
 import NavBar from "@/components/NavBar";
 import Header from "@/components/Header";
 import TechSwiper from "@/components/TechSwiper";
-// import { Contact } from "lucide-react";
 import Tabs from "@/components/Tabs";
 import ProjectCard from "@/components/ProjectCard";
 import Contact from "@/components/Contact";
@@ -19,6 +18,9 @@ export default function HomePage() {
     activeTab === "all"
       ? projects
       : projects.filter((project) => project.status === activeTab);
+  
+  const geistSans = { className: "font-sans" };
+  const geistMono = { className: "font-mono" };    
 
   return (
     <>
@@ -33,7 +35,7 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-[#0d0d0d] text-gray-200 px-6 py-12 font-sans relative">
+      <main className={`${geistSans.className} ${geistMono.className} font-sans min-h-screen bg-[#0d0d0d] text-gray-200 px-6 py-12 relative`} >
         <NavBar />
         <section className="max-w-3xl mx-auto space-y-10">
           <Header />
@@ -43,7 +45,7 @@ export default function HomePage() {
           </section>
 
           <section className="space-y-8 mt-12">
-            <h2 className="text-xl font-semibold underline">Projects</h2>
+            <h2 className="text-md">Projects</h2>
             <div className="flex justify-center mb-6">
             <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
             </div>
@@ -61,7 +63,7 @@ export default function HomePage() {
 
           <Contact />
 
-          <footer className="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+          <footer className="border-t border-[#1e1e1e] pt-6 text-center text-xs text-gray-500">
             &copy; {new Date().getFullYear()} Jesutofunmi
           </footer>
         </section>
