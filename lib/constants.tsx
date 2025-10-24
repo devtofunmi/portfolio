@@ -30,9 +30,9 @@ export const technologies = [
 
 export const projects = [
   {
-    name: "Inter-v",
+    name: "Prepkitty",
     description: "Engage with our AI-driven interview coach in a real-time, personalized practice environment. Receive actionable feedback to enhance your professional delivery.",
-    website: "https://inter-v.vercel.app/",
+    website: "https://prepkitty.co/",
     github: "https://github.com/devtofunmi/inter-v",
     status: "online",
     // reason: "Currently in development",
