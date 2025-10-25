@@ -40,7 +40,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         <h3 className="text-md font-bold group-hover:text-white transition">
           {project.name}
         </h3>
-        <span
+        {/* <span
           className={`px-3 py-1 rounded-full text-xs font-semibold ${statusStyles[project.status]}`}
         >
           {project.status === "offline"
@@ -48,7 +48,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             : project.status === "progress"
             ? `In Progress`
             : "Online"}
-        </span>
+        </span> */}
       </div>
       <p className="text-gray-400 mt-1 text-sm">{project.description}</p>
       <div className="flex gap-4 mt-3">
