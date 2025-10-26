@@ -85,14 +85,14 @@ export const projects = [
     github: "https://github.com/devtofunmi/essence_by_titi",
     status: "progress",
   },
-  {
-    name: "Lockit",
-    description: "Lockit securely locks and shares private messages with trusted recipients only.",
-    website: "https://lockitt.netlify.app",
-    github: "https://github.com/devtofunmi/lockit",
-    status: "offline",
-    reason: "Backend free tier exceeded",
-  },
+  // {
+  //   name: "Lockit",
+  //   description: "Lockit securely locks and shares private messages with trusted recipients only.",
+  //   website: "https://lockitt.netlify.app",
+  //   github: "https://github.com/devtofunmi/lockit",
+  //   status: "offline",
+  //   reason: "Backend free tier exceeded",
+  // },
   {
     name: "Carevo",
     description: "Carevo works nonstop finding and applying to the right jobs for you until you’re hired.",
@@ -123,13 +123,13 @@ export const projects = [
   //   github: "https://github.com/devtofunmi/dashboard",
   //   status: "progress",
   // },
-  {
-    name: "MadewithChakra",
-    description: "Showcase website made with Chakra UI.",
-    website: "https://madewithchakra.netlify.app",
-    github: "https://github.com/devtofunmi/madewithchakra",
-    status: "online",
-  },
+  // {
+  //   name: "MadewithChakra",
+  //   description: "Showcase website made with Chakra UI.",
+  //   website: "https://madewithchakra.netlify.app",
+  //   github: "https://github.com/devtofunmi/madewithchakra",
+  //   status: "online",
+  // },
   // {
   //   name: "Nounite",
   //   description: "Making Open and Distance Learning Easier.",
